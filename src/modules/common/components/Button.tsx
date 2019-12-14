@@ -1,17 +1,22 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
-import { Text } from '../styles';
+import { Text } from '../styles/styles';
+import styled from 'styled-components';
 
 type Props = {
   value: string;
   onPress: () => void;
 };
 
+const ButtonStyled = styled.TouchableOpacity`
+  padding: 10px;
+  backgroundColor: #EEE;
+`;
+
 function Button({ value, onPress }: Props): React.ReactElement {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <ButtonStyled onPress={onPress}>
       <Text center={true}>{value}</Text>
-    </TouchableOpacity>
+    </ButtonStyled>
   );
 };
 

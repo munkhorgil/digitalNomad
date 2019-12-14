@@ -1,7 +1,7 @@
 import React from 'react';
 import ViewPager from '@react-native-community/viewpager';
 
-import { screens, spaces } from '../styles';
+import { screens, spaces } from '../styles/styles';
 
 type Props = {
   items: React.ReactElement[];
